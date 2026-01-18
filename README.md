@@ -1,46 +1,43 @@
-# 🎵 MP3 Tag Reader & Tag Editor using C
+# 🐚 MiniShell using C
 
-A command-line based **MP3 Tag Reader and Tag Editor** application developed in C, designed to read, display, and modify ID3 metadata from MP3 files.
-This project demonstrates strong fundamentals in C programming, binary file handling, and structured data processing.
+A **lightweight Unix-like shell application developed** in **C**, designed to execute internal and external commands while demonstrating **Linux Internals, process control, and POSIX system calls.**
+This project showcases strong fundamentals in C programming, system-level programming, and operating system concepts.
 
 ---
 
 ## 🚀 Project Description
 
-The MP3 Tag Reader & Tag Editor application enables users to extract and update metadata information such as **title, artist, album, year, and genre** from MP3 files.
-It works by parsing ID3 tags directly from MP3 files using low-level file operations.
+The MiniShell application simulates the basic functionality of a Unix shell by accepting user commands, parsing input, and executing them using Linux system calls.
+It supports both **internal commands** and **external commands**, providing hands-on exposure to process creation, signal handling, and shell–kernel interaction.
 
-This project was developed as part of the **C Programming module** in the **Embedded Systems Professional Course at Emertxe Information Technologies**.
+This project was developed as part of the **Linux Internals (LI) module** in the **Embedded Systems Professional Course** at **Emertxe Information Technologies**.
 
 ---
 
 ## 🎯 Objective
 
-- To understand the ID3 tag structure in MP3 files
-- To apply binary file handling techniques in C
-- To read and modify metadata without corrupting MP3 content
-- To improve low-level programming and file parsing skills
+The objective is to understand and use the system calls w.r.t process creation, signal handling, process synchronization, exit status, text parsing etc..
 
 ---
 
 ## ✨ Features
 
-- Read and display MP3 ID3 tag information
-- Edit metadata fields such as title, artist, album, year, and genre
-- Supports ID3 tag-based MP3 files
-- Command-line based interface
-- Input validation and error handling
-- Preserves original audio data while editing tags
+- Execution of external commands (**e.g., ls, wc, sleep**)
+- Built-in internal commands such as **cd, pwd, and exit**
+- Command-line input parsing and argument handling
+- Process control using **fork(), execvp(), and waitpid()**
+- Signal handling using **SIGINT and SIGCHLD**
+- Stable shell behavior with proper child process management
 ---
 
 ## 🛠️ Technologies & Concepts Used
 
 - **C Programming**
-- **Binary File Handling**
-- **File I/O (fopen, fread, fwrite, fseek)**
-- **Structures**
-- **Pointers and Arrays**
-- **String Manipulation**
+- **Linux Internals**
+- **File I/O (fopen, fread, fwrite)**
+- **POSIX System Calls**
+- **Process Control (fork, exec, wait)**
+- **Signal Handling**
 - **Modular Programming**
 
 ---
