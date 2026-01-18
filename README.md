@@ -44,29 +44,24 @@ The objective is to understand and use the system calls w.r.t process creation, 
 
 ## 🧠 How the Application Works
 
-- MP3 files are opened in binary mode
-- ID3 header and frames are parsed using file offsets
-- Metadata values are extracted and displayed to the user
-- For editing, selected tag frames are updated safely
-- Audio data remains untouched during metadata modification
-- Separate modules handle reading and editing operations
-
+- The shell displays a prompt and waits for user input
+- Input is parsed into commands and arguments
+- Internal commands are executed within the shell process
+- External commands are executed by creating child processes
+- The parent process waits for child completion and handles signals
+- Proper signal handling ensures clean process termination
+  
 ---
 
 ## 📂 Project Structure
 
 ```text
-MP3-Tag-Reader/
+MiniShell/
 ├── main.c
-├── view.c
-├── view.h
-├── edit.c
-├── edit.h
-├── version.c
-├── version.h
-├── type.h
-└── sample.mp3
-
+├── scan_input.c
+├── cmd.c
+├── header.h
+└── ext_cmds.txt
 ```
 
 ---
@@ -75,15 +70,14 @@ MP3-Tag-Reader/
 
 ### Compile and run:
 ```bash
-gcc *.c -o mp3_tag
-./mp3_tag -v sample.mp3
-./mp3_tag -e sample.mp3
+gcc *.c -o minishell
+./minishell
 ```
 
 ## Learning Outcome and Impact
 
-This project strengthened my understanding of **binary file formats, metadata parsing, and structured file manipulation.**
-It improved my debugging skills and confidence in working with **low-level file operations** while ensuring data integrity.
+This project strengthened my understanding of **Linux process management, system calls, and shell–kernel interaction**.
+It improved my ability to debug system-level programs and gave me confidence in writing robust **low-level C applications**.
 
 ---
 
