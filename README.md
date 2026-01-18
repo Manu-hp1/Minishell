@@ -83,7 +83,7 @@ It improved my ability to debug system-level programs and gave me confidence in 
 
 ## Acknowledgment
 
-I would like to sincerely thank Anand Lokhande Sir for his guidance and clear explanation of C programming concepts, which helped me build this project with a strong logical foundation.
+I would like to sincerely thank **Anand Lokhande Sir** for his guidance and clear explanation of C programming concepts, which helped me build this project with a strong logical foundation.
 
 ---
 
